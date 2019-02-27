@@ -154,9 +154,9 @@ ngx_secure_token_verizon_get_var(
 	v->data = p;
 
 	p = ngx_copy(p, POLICY_PARAM, sizeof(POLICY_PARAM) - 1);
-	p = ngx_encode_base64_cloudfront(p, &policy);
+	p = ngx_encode_base64_verizon(p, &policy);
 	p = ngx_copy(p, SIGNATURE_PARAM, sizeof(SIGNATURE_PARAM) - 1);
-	p = ngx_encode_base64_cloudfront(p, &signature);
+	p = ngx_encode_base64_verizon(p, &signature);
 	p = ngx_copy(p, KEY_PAIR_ID_PARAM, sizeof(KEY_PAIR_ID_PARAM) - 1);
 	p = ngx_copy(p, token->key_pair_id.data, token->key_pair_id.len);
 	*p = '\0';
@@ -199,7 +199,7 @@ ngx_secure_token_verizon_block(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 	if (token->key_pair_id.data == NULL)
 	{
 		ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
-			"\"key_pair_id\" is mandatory for cloudfront tokens");
+			"\"key_pair_id\" is mandatory for verizon tokens");
 		return NGX_CONF_ERROR;
 	}
 

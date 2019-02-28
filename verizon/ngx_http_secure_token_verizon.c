@@ -97,7 +97,7 @@ ngx_secure_token_verizon_get_var(
 		return NGX_ERROR;
 	}
 
-	printf("%s\n", l_token);
+//	printf("%s\n", l_token);
 
 	// build the token
 	p = ngx_pnalloc(

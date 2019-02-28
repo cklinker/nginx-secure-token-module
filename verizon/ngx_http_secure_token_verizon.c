@@ -87,8 +87,8 @@ ngx_secure_token_verizon_get_var(
 	int l_token_len = (policy.len+(16*2))*4;
 	char l_token[l_token_len];
 	int l_ret = ectoken_encrypt_token(l_token, &l_token_len,
-									  policy.data, policy.len,
-									  token->key, token->key.len);
+									  (char *)policy.data, policy.len,
+									  (char *)token->key.data, token->key.len);
 	if (l_ret < 0)
 	{
 		return NGX_ERROR;

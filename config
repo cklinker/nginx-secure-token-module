@@ -1,5 +1,7 @@
 ngx_addon_name=ngx_http_secure_token_filter_module
 
+CORE_LIBS="$CORE_LIBS -lm"
+
 SEC_TOKEN_DEPS="$ngx_addon_dir/akamai/ngx_http_secure_token_akamai.h                  \
 				$ngx_addon_dir/akamai/ngx_http_secure_token_akamai_commands.h         \
 				$ngx_addon_dir/chinacache/ngx_http_secure_token_chinacache.h          \

@@ -111,7 +111,9 @@ ngx_secure_token_verizon_get_var(
 	}
 
 	v->data = p;
-	signature = ngx_string(&l_token);
+	int ptr = ngx_sprintf(signature.data, l_token);
+
+//	signature = ngx_string(&l_token);
 
 	p = ngx_encode_base64(p, &signature);
 	*p = '\0';

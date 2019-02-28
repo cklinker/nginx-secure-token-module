@@ -29,7 +29,7 @@ static ngx_command_t ngx_http_secure_token_verizon_cmds[] = {
 				NGX_CONF_TAKE1,
 				ngx_conf_set_str_slot,
 				0,
-				offsetof(ngx_secure_token_verizon_token_t, key_pair_id),
+				offsetof(ngx_secure_token_verizon_token_t, key),
 				NULL},
 
 		{ngx_string("ip_address"),

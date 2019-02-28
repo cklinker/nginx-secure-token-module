@@ -5,11 +5,13 @@
 
 #include <openssl/pem.h>
 
+#define POLICY_HEADER "ec_expire=%uD"
+#define POLICY_CONDITION_IPADDRESS "&ec_clientip=%V"
 
 // typedefs
 typedef struct {
 	ngx_str_t base_path;
-	ngx_str_t key_pair_id;
+	ngx_str_t key;
 	ngx_http_complex_value_t *ip_address;
 	ngx_secure_token_time_t end;
 } ngx_secure_token_verizon_token_t;
@@ -51,6 +53,7 @@ ngx_secure_token_verizon_get_var(
 	ngx_http_variable_value_t *v,
 	uintptr_t data) {
 	ngx_secure_token_verizon_token_t *token = (void *) data;
+	ngx_str_t key;
 	ngx_str_t ip_address;
 	ngx_int_t rc;
 	size_t policy_size;
@@ -71,41 +74,38 @@ ngx_secure_token_verizon_get_var(
 		end_time += ngx_time();
 	}
 
-	p = ngx_sprintf(policy.data, POLICY_HEADER, &acl, end_time);
+	p = ngx_sprintf(policy.data, POLICY_HEADER, end_time);
 	if (token->ip_address != NULL) {
 		p = ngx_sprintf(p, POLICY_CONDITION_IPADDRESS, &ip_address);
 	}
-	p = ngx_copy(p, POLICY_FOOTER, sizeof(POLICY_FOOTER) - 1);
 
 	policy.len = p - policy.data;
 
-	// sign the policy
-	rc = ngx_http_secure_token_sign(r, token->private_key, &policy, &signature);
-	if (rc != NGX_OK) {
-		return rc;
+	size_t l_key_len = strlen(token->key);
+	size_t l_string_len = policy.len;
+	int l_token_len = (l_string_len+(16*2))*4;
+	char l_token[l_token_len];
+	int l_ret = ectoken_encrypt_token(l_token, &l_token_len,
+									  policy.data, policy.len,
+									  token->key, l_key_len);
+	if (l_ret < 0)
+	{
+		return NGX_ERROR;
 	}
+
+	printf("%s\n", l_token);
 
 	// build the token
 	p = ngx_pnalloc(
 			r->pool,
-			sizeof(POLICY_PARAM) - 1 +
-			ngx_base64_encoded_length(policy.len) +
-			sizeof(SIGNATURE_PARAM) - 1 +
-			ngx_base64_encoded_length(signature.len) +
-			sizeof(KEY_PAIR_ID_PARAM) - 1 +
-			token->key_pair_id.len + 1);
+			ngx_base64_encoded_length(l_token));
 	if (p == NULL) {
 		return NGX_ERROR;
 	}
 
 	v->data = p;
 
-	p = ngx_copy(p, POLICY_PARAM, sizeof(POLICY_PARAM) - 1);
-	p = ngx_encode_base64_verizon(p, &policy);
-	p = ngx_copy(p, SIGNATURE_PARAM, sizeof(SIGNATURE_PARAM) - 1);
-	p = ngx_encode_base64_verizon(p, &signature);
-	p = ngx_copy(p, KEY_PAIR_ID_PARAM, sizeof(KEY_PAIR_ID_PARAM) - 1);
-	p = ngx_copy(p, token->key_pair_id.data, token->key_pair_id.len);
+	p = ngx_encode_base64(p, &l_token);
 	*p = '\0';
 
 	v->len = p - v->data;

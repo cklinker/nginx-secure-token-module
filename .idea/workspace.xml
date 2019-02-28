@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="473b9e35-efad-48c8-bac6-dcf633edb508" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config" beforeDir="false" afterPath="$PROJECT_DIR$/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ectoken/ectoken_v3.c" beforeDir="false" afterPath="$PROJECT_DIR$/ectoken/ectoken_v3.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
               <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="498" column="32" lean-forward="true" selection-start-line="498" selection-start-column="32" selection-end-line="498" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -63,11 +72,6 @@
               <caret line="54" lean-forward="true" selection-start-line="53" selection-end-line="54" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinacache/ngx_http_secure_token_chinacache_commands.h">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -136,11 +140,11 @@
         <option value="$PROJECT_DIR$/ngx_http_secure_token_filter_module.c" />
         <option value="$PROJECT_DIR$/ectoken/base64.c" />
         <option value="$PROJECT_DIR$/ectoken/base64.h" />
-        <option value="$PROJECT_DIR$/ectoken/ectoken_v3.c" />
         <option value="$PROJECT_DIR$/ectoken/ectoken_v3.h" />
         <option value="$PROJECT_DIR$/ectoken/ec_encrypt.c" />
         <option value="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" />
         <option value="$PROJECT_DIR$/config" />
+        <option value="$PROJECT_DIR$/ectoken/ectoken_v3.c" />
       </list>
     </option>
   </component>
@@ -232,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="16018000" />
+      <workItem from="1551234756962" duration="16386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16018000" />
+    <option name="totallyTimeSpent" value="16386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="942" y="195" width="1400" height="1000" extended-state="0" />
@@ -346,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8430">
-          <caret line="562" column="1" selection-start-line="562" selection-start-column="1" selection-end-line="562" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon_commands.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -446,6 +443,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="498" column="32" lean-forward="true" selection-start-line="498" selection-start-column="32" selection-end-line="498" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -276,7 +276,7 @@ int construct_base64_encoded_token(unsigned char* ao_encoded_message,
 {
     size_t l_len = a_iv_len+a_tag_len+a_ciphertext_len;
     size_t l_encoded_len = base64_encoded_size(l_len);;
-    if (*ao_encoded_message_len < l_encoded_len)
+    if (*ao_encoded_message_len < (int)l_encoded_len)
     {
         return -1;
     }
@@ -387,9 +387,9 @@ int ectoken_decrypt_token(char* ao_plaintext, int* ao_plaintext_len,
        a_key_len   < 0)
         return -3;
 
-    if(ectoken_encrypt_required_size(0) > a_token_len)
+    if((int)ectoken_encrypt_required_size(0) > a_token_len)
         return -3;
-    if(ectoken_decrypt_required_size(a_token_len) > *ao_plaintext_len)
+    if((int)ectoken_decrypt_required_size(a_token_len) > *ao_plaintext_len)
         return -3;
 
     memset(ao_plaintext, 0, *ao_plaintext_len);
@@ -501,7 +501,7 @@ int ectoken_encrypt_token(char* ao_token, int* ao_token_len,
        *ao_token_len   < 0)
         return -3;
 
-    if(*ao_token_len < ectoken_encrypt_required_size(a_plaintext_len))
+    if(*ao_token_len < (int)ectoken_encrypt_required_size(a_plaintext_len))
         return -3;
 
     int l_ret = 0;

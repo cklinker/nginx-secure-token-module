@@ -10,6 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="473b9e35-efad-48c8-bac6-dcf633edb508" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ectoken/base64.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ectoken/base64.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ectoken/ec_encrypt.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ectoken/ectoken_v3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ectoken/ectoken_v3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" beforeDir="false" afterPath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,66 +27,64 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngx_http_secure_token_conf.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngx_http_secure_token_encrypt_uri.c">
+        <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngx_http_secure_token_encrypt_uri.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngx_http_secure_token_filter_module.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngx_http_secure_token_filter_module.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="156" column="48" selection-start-line="156" selection-start-column="43" selection-end-line="156" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+            <state relative-caret-position="106">
+              <caret line="81" column="22" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/akamai/ngx_http_secure_token_akamai.c">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="186" column="22" lean-forward="true" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+            <state relative-caret-position="1849">
+              <caret line="200" column="39" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon_commands.h">
+        <entry file="file://$PROJECT_DIR$/akamai/ngx_http_secure_token_akamai.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chinacache/ngx_http_secure_token_chinacache.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="-2224" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chinacache/ngx_http_secure_token_chinacache_commands.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cht/ngx_http_secure_token_cht.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-37">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-543" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront_commands.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.h">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -96,7 +100,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>string</find>
+      <find>l_token</find>
       <find>cloud</find>
+      <find>policy</find>
+      <find>ngx_secure_token_akamai_get_var</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,6 +117,11 @@
         <option value="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.h" />
         <option value="$PROJECT_DIR$/ngx_http_secure_token_filter_module.c" />
         <option value="$PROJECT_DIR$/config" />
+        <option value="$PROJECT_DIR$/ectoken/base64.c" />
+        <option value="$PROJECT_DIR$/ectoken/base64.h" />
+        <option value="$PROJECT_DIR$/ectoken/ectoken_v3.c" />
+        <option value="$PROJECT_DIR$/ectoken/ectoken_v3.h" />
+        <option value="$PROJECT_DIR$/ectoken/ec_encrypt.c" />
         <option value="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" />
       </list>
     </option>
@@ -154,7 +167,7 @@
             <path>
               <item name="nginx-secure-token-module" type="b2602c69:ProjectViewProjectNode" />
               <item name="nginx-secure-token-module" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="ectoken" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nginx-secure-token-module" type="b2602c69:ProjectViewProjectNode" />
@@ -201,35 +214,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="1535000" />
+      <workItem from="1551234756962" duration="7848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1535000" />
+    <option name="totallyTimeSpent" value="7848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="580" y="205" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2496318" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,15 +331,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/akamai/ngx_http_secure_token_akamai.c">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/ectoken/base64.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5430">
+          <caret line="362" lean-forward="true" selection-start-line="362" selection-end-line="362" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ectoken/base64.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8430">
+          <caret line="562" column="1" selection-start-line="562" selection-start-column="1" selection-end-line="562" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ectoken/ec_encrypt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon_commands.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront_commands.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -337,9 +388,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="186" column="22" lean-forward="true" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+        <state relative-caret-position="106">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="22" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akamai/ngx_http_secure_token_akamai.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akamai/ngx_http_secure_token_akamai.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1849">
+          <caret line="200" column="39" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinacache/ngx_http_secure_token_chinacache_commands.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinacache/ngx_http_secure_token_chinacache.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cht/ngx_http_secure_token_cht.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543" />
       </provider>
     </entry>
   </component>

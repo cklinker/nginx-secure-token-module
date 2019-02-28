@@ -82,8 +82,8 @@ ngx_secure_token_verizon_get_var(
 
 	policy.len = p - policy.data;
 
-	char *string = policy.data;
-	char *key = token->key.data;
+	char *string = (char *)policy.data;
+	char *key = (char *)token->key.data;
 
 //	size_t l_key_len = strlen(token->key);
 //	size_t l_string_len = policy.len;

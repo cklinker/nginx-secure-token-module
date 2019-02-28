@@ -115,7 +115,8 @@ ngx_secure_token_verizon_get_var(
 
 //	signature = ngx_string(&l_token);
 
-	p = ngx_encode_base64(p, &signature);
+	p = ngx_copy(p, signature.data, signature.len);
+//	p = ngx_encode_base64(p, &signature);
 	*p = '\0';
 
 	v->len = p - v->data;

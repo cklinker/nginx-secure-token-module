@@ -112,7 +112,7 @@ ngx_secure_token_verizon_get_var(
 
 	v->data = p;
 	ngx_sprintf(signature.data, l_token);
-	p = ngx_copy(p, signature.data, signature.len);
+	p = ngx_copy(p, signature.data, l_token_len);
 	signature.len = p - signature.data;
 	*p = '\0';
 

@@ -56,6 +56,7 @@ ngx_secure_token_verizon_get_var(
 	ngx_str_t key;
 	ngx_str_t policy;
 	ngx_str_t ip_address;
+	ngx_str_t signature;
 	ngx_int_t rc;
 	size_t policy_size;
 	time_t end_time;
@@ -100,6 +101,8 @@ ngx_secure_token_verizon_get_var(
 //	printf("%s\n", l_token);
 
 	// build the token
+
+
 	p = ngx_pnalloc(
 			r->pool,
 			ngx_base64_encoded_length(l_token_len));
@@ -108,8 +111,8 @@ ngx_secure_token_verizon_get_var(
 	}
 
 	v->data = p;
-
-	p = ngx_encode_base64(p, &l_token);
+	ngx_sprintf(signature.data, POLICY_HEADER, end_time);
+	p = ngx_encode_base64(p, ngx_string(l_token));
 	*p = '\0';
 
 	v->len = p - v->data;

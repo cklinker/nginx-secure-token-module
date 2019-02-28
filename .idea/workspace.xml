@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="99" column="2" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+            <state relative-caret-position="610">
+              <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -82,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
+            <state relative-caret-position="-718">
               <caret line="81" selection-start-line="80" selection-end-line="81" />
             </state>
           </provider>
@@ -116,9 +116,9 @@
       <find>ngx_http_secure_token_sign</find>
       <find>policy</find>
       <find>key_p</find>
-      <find>signature</find>
       <find>l_string_len</find>
       <find>string</find>
+      <find>signature</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/verizon</dir>
@@ -231,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="13134000" />
+      <workItem from="1551234756962" duration="13529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13134000" />
+    <option name="totallyTimeSpent" value="13529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="942" y="195" width="1400" height="1000" extended-state="0" />
@@ -420,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="81" selection-start-line="80" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -441,10 +434,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-718">
+          <caret line="81" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="99" column="2" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+        <state relative-caret-position="610">
+          <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -84,7 +84,7 @@ ngx_secure_token_verizon_get_var(
 
 //	size_t l_key_len = strlen(token->key);
 //	size_t l_string_len = policy.len;
-	int l_token_len = (l_string_len+(16*2))*4;
+	int l_token_len = (policy.len+(16*2))*4;
 	char l_token[l_token_len];
 	int l_ret = ectoken_encrypt_token(l_token, &l_token_len,
 									  policy.data, policy.len,

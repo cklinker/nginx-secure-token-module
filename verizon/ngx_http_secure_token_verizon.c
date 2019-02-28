@@ -102,7 +102,7 @@ ngx_secure_token_verizon_get_var(
 	// build the token
 	p = ngx_pnalloc(
 			r->pool,
-			ngx_base64_encoded_length(l_token));
+			ngx_base64_encoded_length(l_token_len));
 	if (p == NULL) {
 		return NGX_ERROR;
 	}

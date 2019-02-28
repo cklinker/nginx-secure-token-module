@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="669">
+              <caret line="106" column="25" lean-forward="true" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -231,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="12984000" />
+      <workItem from="1551234756962" duration="13112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12984000" />
+    <option name="totallyTimeSpent" value="13112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="942" y="195" width="1400" height="1000" extended-state="0" />
@@ -443,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="669">
+          <caret line="106" column="25" lean-forward="true" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
         </state>
       </provider>
     </entry>

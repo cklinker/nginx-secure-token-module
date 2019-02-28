@@ -53,11 +53,9 @@ ngx_secure_token_verizon_get_var(
 	ngx_http_variable_value_t *v,
 	uintptr_t data) {
 	ngx_secure_token_verizon_token_t *token = (void *) data;
-//	ngx_str_t key;
 	ngx_str_t policy;
 	ngx_str_t ip_address;
 	ngx_str_t signature;
-//	ngx_int_t rc;
 	size_t policy_size;
 	time_t end_time;
 	u_char *p;
@@ -89,8 +87,6 @@ ngx_secure_token_verizon_get_var(
 	char *string = (char *)policy.data;
 	char *key_val = (char *)token->key.data;
 
-//	size_t l_key_len = strlen(token->key);
-//	size_t l_string_len = policy.len;
 	int l_token_len = (policy.len+(16*2))*4;
 	char l_token[l_token_len];
 	int l_ret = ectoken_encrypt_token(l_token, &l_token_len,

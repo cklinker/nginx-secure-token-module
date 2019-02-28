@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="473b9e35-efad-48c8-bac6-dcf633edb508" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config" beforeDir="false" afterPath="$PROJECT_DIR$/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" beforeDir="false" afterPath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,16 +20,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+            <state relative-caret-position="1365">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -142,9 +142,9 @@
         <option value="$PROJECT_DIR$/ectoken/base64.h" />
         <option value="$PROJECT_DIR$/ectoken/ectoken_v3.h" />
         <option value="$PROJECT_DIR$/ectoken/ec_encrypt.c" />
-        <option value="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" />
         <option value="$PROJECT_DIR$/ectoken/ectoken_v3.c" />
         <option value="$PROJECT_DIR$/config" />
+        <option value="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" />
       </list>
     </option>
   </component>
@@ -236,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="17408000" />
+      <workItem from="1551234756962" duration="17550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17408000" />
+    <option name="totallyTimeSpent" value="17550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="942" y="194" width="1400" height="1000" extended-state="0" />
@@ -418,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ectoken/ectoken_v3.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -450,6 +443,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>

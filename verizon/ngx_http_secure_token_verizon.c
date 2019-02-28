@@ -54,6 +54,7 @@ ngx_secure_token_verizon_get_var(
 	uintptr_t data) {
 	ngx_secure_token_verizon_token_t *token = (void *) data;
 	ngx_str_t key;
+	ngx_str_t policy;
 	ngx_str_t ip_address;
 	ngx_int_t rc;
 	size_t policy_size;
@@ -140,7 +141,7 @@ ngx_secure_token_verizon_block(ngx_conf_t *cf, ngx_command_t *cmd, void *conf) {
 	}
 
 	// validate required params
-	if (token->key_pair_id.data == NULL) {
+	if (token->key.data == NULL) {
 		ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
 						   "\"key\" is mandatory for verizon tokens");
 		return NGX_CONF_ERROR;

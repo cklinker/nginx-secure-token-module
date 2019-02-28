@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="473b9e35-efad-48c8-bac6-dcf633edb508" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" beforeDir="false" afterPath="$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="377">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="80" selection-start-line="79" selection-end-line="80" />
+            <state relative-caret-position="356">
+              <caret line="81" selection-start-line="80" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -111,9 +110,10 @@
       <find>cloud</find>
       <find>ngx_secure_token_akamai_get_var</find>
       <find>ngx_http_secure_token_sign</find>
-      <find>signature</find>
       <find>policy</find>
       <find>string</find>
+      <find>key_p</find>
+      <find>signature</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551234755891</updated>
-      <workItem from="1551234756962" duration="11241000" />
+      <workItem from="1551234756962" duration="11444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11241000" />
+    <option name="totallyTimeSpent" value="11444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="942" y="195" width="1400" height="1000" extended-state="0" />
@@ -419,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="80" selection-start-line="79" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ectoken/ec_encrypt.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -433,10 +426,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cloudfront/ngx_http_secure_token_cloudfront.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="81" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/verizon/ngx_http_secure_token_verizon.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="377">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
         </state>
       </provider>
     </entry>
